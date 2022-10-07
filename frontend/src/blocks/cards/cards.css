@@ -1,0 +1,28 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 17px;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+@media (max-width: 950px) {
+  .cards {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 798px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 785px) {
+  .cards {
+    margin: 0 auto;
+  }
+}

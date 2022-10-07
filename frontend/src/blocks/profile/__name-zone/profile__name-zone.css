@@ -1,0 +1,6 @@
+.profile__name-zone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 0 7px;
+}

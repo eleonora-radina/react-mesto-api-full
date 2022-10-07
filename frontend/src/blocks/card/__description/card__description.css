@@ -1,0 +1,6 @@
+.card__description {
+  margin: 16px 20px 19px 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
