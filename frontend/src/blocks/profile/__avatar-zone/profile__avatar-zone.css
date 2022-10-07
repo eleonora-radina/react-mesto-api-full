@@ -1,0 +1,29 @@
+.profile__avatar-zone {
+    position: relative;
+    border-radius: 50%;
+    height: 120px;
+    grid-area: avatar;
+  }
+
+  @media (max-width: 785px) {
+    .profile__avatar-zone {
+      margin: 42px auto 26px;
+    }
+  }
+  
+  .profile__avatar-zone::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 46px;
+    left: 46px;
+    background: url('../../../images/editAvatar.png') center no-repeat;
+    visibility: hidden;
+    cursor: pointer;
+  }
+  
+  
+  .profile__avatar-zone:hover::before {
+    visibility: visible;
+  }

@@ -1,0 +1,9 @@
+.auth {
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 60px;
+  max-width: 358px;
+  margin-bottom: 112px;
+}

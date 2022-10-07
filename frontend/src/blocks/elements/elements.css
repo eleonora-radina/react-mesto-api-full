@@ -1,0 +1,11 @@
+.elements {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .elements {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

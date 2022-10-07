@@ -1,0 +1,22 @@
+.popup__form-item {
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.21;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.popup__form-item:first-of-type {
+  margin-bottom: 48px;
+}
+
+.popup__form-item:last-of-type {
+  margin-bottom: 10px;
+}

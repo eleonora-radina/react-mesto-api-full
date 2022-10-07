@@ -1,0 +1,8 @@
+.popup__container_image {
+  max-width: 75vw;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
