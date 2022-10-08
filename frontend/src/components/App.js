@@ -30,15 +30,13 @@ function App() {
   const [isSuccess, setIsSuccess] = useState(false);
 
   useEffect(() => {
-    if(loggedIn) {
       api.getUser()
         .then((userData) => {
-         setLoggedIn(true);
+          setLoggedIn(true);
           setCurrentUser(userData);
         })
         .catch((err) => console.log(err));
-     }
-  }, [loggedIn, history]);
+  }, [loggedIn]);
 
   useEffect(() => {
     if(loggedIn) {
