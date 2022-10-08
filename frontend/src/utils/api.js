@@ -149,7 +149,8 @@ class Api {
 const api = new Api({
   baseUrl: 'https://api.noradina.nomoredomains.icu', 
   headers: {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    "Access-Control-Allow-Credentials": true,
   }
 });
 
