@@ -150,7 +150,7 @@ const api = new Api({
   baseUrl: 'https://api.noradina.nomoredomains.icu', 
   headers: {
     'Content-Type': 'application/json',
-    "Access-Control-Allow-Credentials": true,
+    'Access-Control-Allow-Credentials': true,
   }
 });
 
