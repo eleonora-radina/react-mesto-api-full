@@ -147,7 +147,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://api.noradina.nomoredomains.icu', 
+  baseUrl: 'https://api.noradina.nomoredomains.icu', 
   headers: {
     'Content-Type': 'application/json'
   }
