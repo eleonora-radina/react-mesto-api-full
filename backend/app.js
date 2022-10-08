@@ -15,13 +15,18 @@ const app = express();
 mongoose.connect('mongodb://localhost:27017/mestodb');
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://noradina.nomoredomains.icu'],
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://noradina.nomoredomains.icu', 'https://noradina.nomoredomains.icu'],
   credentials: true,
 }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+app.use((req, res, next) => {
+  res.header({ 'Access-Control-Allow-Origin': '*' });
+  next();
+});
 
 app.use(requestLogger);
 app.use('/', router);
