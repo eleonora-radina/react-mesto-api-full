@@ -36,10 +36,10 @@ function App() {
         setCurrentUser(userData);
       })
       .catch((err) => console.log(err));
-  }, [loggedIn]);
+  }, [loggedIn, history]);
 
   useEffect(() => {
-    if(setLoggedIn) {
+    if(loggedIn) {
       api.getCards()
         .then((cardData) => {
           setCards(cardData);
