@@ -30,12 +30,14 @@ function App() {
   const [isSuccess, setIsSuccess] = useState(false);
 
   useEffect(() => {
-    api.getUser()
-      .then((userData) => {
-        setLoggedIn(true);
-        setCurrentUser(userData);
-      })
-      .catch((err) => console.log(err));
+    if(loggedIn) {
+      api.getUser()
+        .then((userData) => {
+         setLoggedIn(true);
+          setCurrentUser(userData);
+        })
+        .catch((err) => console.log(err));
+     }
   }, [loggedIn, history]);
 
   useEffect(() => {
