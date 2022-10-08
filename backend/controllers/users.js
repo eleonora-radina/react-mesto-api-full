@@ -44,7 +44,7 @@ const login = async (req, res, next) => {
       return next(new UnauthorizedError('Неправильные почта или пароль'));
     }
 
-    const token = jwt.sign({ _id: user._id }, 'some-secret-key', { expiresIn: '7d' });
+    const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET, { expiresIn: '7d' });
     res.cookie('jwt', token, { httpOnly: true, sameSite: true /* sameSite: 'none', secure: true, */ });
 
     return res.send(user.toJSON());
