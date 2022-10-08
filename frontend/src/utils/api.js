@@ -147,9 +147,8 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://localhost:3000', 
+  baseUrl: 'http://api.noradina.nomoredomains.icu', 
   headers: {
-    // authorization:'f7a8d2c2-99fc-4e55-b877-773be6a3ed35',
     'Content-Type': 'application/json'
   }
 });
