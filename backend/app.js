@@ -15,7 +15,7 @@ const app = express();
 mongoose.connect('mongodb://localhost:27017/mestodb');
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://api.noradina.nomoredomains.icu', 'http://noradina.nomoredomains.icu'],
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://api.noradina.nomoredomains.icu', 'https://noradina.nomoredomains.icu'],
   credentials: true,
 }));
 
